@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
+  <!-- parent>
     <groupId>org.eclipse.ee4j</groupId>
     <artifactId>project</artifactId>
     <version>1.0.6</version>
     <relativePath />
-  </parent>
+  </parent -->
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>jakarta.inject</groupId>
-  <artifactId>jakarta.inject-api</artifactId>
+  <artifactId>jakarta.inject-api</artifactId>  
   <packaging>jar</packaging>
   <name>Jakarta Dependency Injection</name>
   <version>2.0.2-SNAPSHOT</version>
@@ -94,7 +94,7 @@
         <artifactId>maven-source-plugin</artifactId>
         <version>3.2.1</version>
       </plugin>
-      <plugin>
+      <!-- plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.3.0</version>
@@ -130,11 +130,12 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
             <manifestFile>target/classes/META-INF/MANIFEST.MF</manifestFile>
           </archive>
         </configuration>
-      </plugin>
+      </plugin -->
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>4.2.1</version>
+        <!-- version>4.2.1</version -->
+        <version>5.1.1</version>
         <configuration>
           <instructions>
             <Implementation-Version>${spec_version}</Implementation-Version>
